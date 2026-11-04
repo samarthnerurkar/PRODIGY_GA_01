@@ -67,8 +67,6 @@ gr.Interface(
 
 ## 🎬 Demo
 
-![Demo](demo.png) 
-
 <img width="1532" height="895" alt="image" src="https://github.com/user-attachments/assets/e4a52f3a-252e-4e2c-b162-9195e53363d2" />
 
 ## 🔄 Workflow
