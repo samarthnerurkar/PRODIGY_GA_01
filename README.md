@@ -65,36 +65,16 @@ gr.Interface(
 | `no_repeat_ngram_size` | 2 | Avoids repeating word pairs |
 | `early_stopping` | True | Stops when beams finish |
 
-## 🖥 Demo
+## 🎬 Demo
 
-Example prompt: *"are machine intelligent than human being"*. The model continues with a short paragraph about AI and its future.
+![Demo](demo.png) 
+
+<img width="1532" height="895" alt="image" src="https://github.com/user-attachments/assets/e4a52f3a-252e-4e2c-b162-9195e53363d2" />
 
 ## 🔄 Workflow
 
-```mermaid
-flowchart LR
-    subgraph UI1["🌐 Gradio Interface"]
-        A["💬 User Prompt"]
-        G["📤 Generated Text Box"]
-    end
-    subgraph PIPE["⚙️ GPT-2 Pipeline"]
-        B["GPT-2 Tokenizer"]
-        C["GPT-2 Model<br/>GPT2LMHeadModel"]
-        D["Beam Search<br/>5 beams · max length 100"]
-        E["Decode Tokens"]
-        F["Trim to Last Full Sentence"]
-    end
-    A --> B --> C --> D --> E --> F --> G
-    class A input
-    class B,E,F process
-    class C,D model
-    class G output
-    classDef input fill:#dbeafe,stroke:#2563eb,stroke-width:2px,color:#0f172a
-    classDef process fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#0f172a
-    classDef model fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#0f172a
-    classDef loss fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#0f172a
-    classDef output fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#0f172a
-```
+<img width="927" height="367" alt="image" src="https://github.com/user-attachments/assets/a1d54bf1-bc40-4f69-93a7-1b5141834d4e" />
+
 
 ## ⚠️ Notes
 
