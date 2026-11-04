@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+.venv/
+venv/
+
+# Model files and cache
+*.bin
+*.pt
+*.safetensors
+.cache/
+
+# Gradio
+flagged/
+gradio_cached_examples/
+
+# OS files
+.DS_Store
