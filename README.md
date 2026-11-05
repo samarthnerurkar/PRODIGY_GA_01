@@ -1,4 +1,4 @@
-# 💬 GPT-2 Text Generation 
+# 💬 Text Generation With GPT-2
 
 A Colab notebook that loads the pretrained GPT-2 language model and exposes it through a simple Gradio web interface. Type a prompt, get a generated continuation.
 
